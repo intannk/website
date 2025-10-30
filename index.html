@@ -4,10 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Makan Bentars</title>
-
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-
   <script>
     tailwind.config = {
       theme: {
@@ -23,104 +21,104 @@
     };
   </script>
 </head>
-
 <body class="bg-cream text-maroon font-sans">
 
-  <header class="relative bg-maroon text-cream shadow-md">
-    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-      
-      <div class="flex items-center space-x-3">
-        <img src="images/logo.png" alt="Makan Bentars Logo" class="w-14 h-auto object-contain" />
-        <h1 class="text-2xl font-bold tracking-wide">Makan Bentars</h1>
+  <header class="relative bg-maroon text-cream shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 py-3 sm:py-4">
+      <div class="flex items-center space-x-2 sm:space-x-3">
+        <img src="images/logo.png" alt="Makan Bentars Logo" class="w-10 h-10 sm:w-14 sm:h-14 object-contain" />
+        <h1 class="text-lg sm:text-xl md:text-2xl font-bold tracking-wide">Makan Bentars</h1>
       </div>
-
-      <ul class="hidden md:flex space-x-8 text-lg font-medium ml-auto">
+      <button id="mobile-menu-btn" class="md:hidden text-2xl focus:outline-none z-50">
+        <i class="ri-menu-line"></i>
+      </button>
+      <ul class="hidden md:flex space-x-6 lg:space-x-8 text-base lg:text-lg font-medium ml-auto">
         <li><a href="#home" class="hover:text-beige transition">Home</a></li>
         <li><a href="#special" class="hover:text-beige transition">Special</a></li>
         <li><a href="#menu" class="hover:text-beige transition">Menu</a></li>
         <li><a href="#about" class="hover:text-beige transition">About</a></li>
         <li><a href="#contact" class="hover:text-beige transition">Contact</a></li>
       </ul>
-
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-maroon border-t border-cream/20">
+      <ul class="flex flex-col px-4 py-3">
+        <li><a href="#home" class="block py-2.5 text-base hover:text-beige transition border-b border-cream/10">Home</a></li>
+        <li><a href="#special" class="block py-2.5 text-base hover:text-beige transition border-b border-cream/10">Special</a></li>
+        <li><a href="#menu" class="block py-2.5 text-base hover:text-beige transition border-b border-cream/10">Menu</a></li>
+        <li><a href="#about" class="block py-2.5 text-base hover:text-beige transition border-b border-cream/10">About</a></li>
+        <li><a href="#contact" class="block py-2.5 text-base hover:text-beige transition">Contact</a></li>
+      </ul>
     </div>
   </header>
 
-  <section id="home" class="relative h-[80vh] flex items-center justify-center bg-cover bg-center" 
-    style="background-image: url('images/header-bg.png');">
+  <section id="home" class="relative h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] flex items-center justify-center bg-cover bg-center" style="background-image: url('images/header-bg.png');">
     <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-
-    <div class="relative text-center text-cream px-6">
-      <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
+    <div class="relative text-center text-cream px-4 sm:px-6">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-3 sm:mb-4 drop-shadow-lg leading-tight">
         Nikmati Lezatnya Dalam Sekejap!
       </h1>
-      <p class="text-lg md:text-xl font-semibold text-beige">
+      <p class="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-beige">
         Makanan ringan praktis, higienis, dan menggugah selera.
       </p>
     </div>
   </section>
 
-  <section class="py-20 bg-beige bg-opacity-40" id="special">
-    <h2 class="text-center text-4xl font-bold mb-12 text-maroon">OUR SPECIAL MENU</h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto px-6">
-      <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:scale-105 transition-transform">
-        <img src="images/mentai.jpg" alt="mentai" class="rounded-xl mx-auto mb-4 h-48 object-cover" />
-        <h4 class="text-xl font-semibold">Dimsum Mentai</h4>
-        <p class="text-mocha">Lezat dan creamy dengan saus mentai khas.</p>
+  <section class="py-10 sm:py-12 md:py-16 lg:py-20 bg-beige bg-opacity-40" id="special">
+    <h2 class="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-maroon px-4">OUR SPECIAL MENU</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="bg-white shadow-lg rounded-2xl p-4 sm:p-5 md:p-6 text-center hover:scale-105 transition-transform">
+        <img src="images/mentai.jpg" alt="mentai" class="rounded-xl mx-auto mb-3 sm:mb-4 h-36 sm:h-40 md:h-48 w-full object-cover" />
+        <h4 class="text-base sm:text-lg md:text-xl font-semibold">Dimsum Mentai</h4>
+        <p class="text-xs sm:text-sm md:text-base text-mocha mt-1">Lezat dan creamy dengan saus mentai khas.</p>
       </div>
-
-      <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:scale-105 transition-transform">
-        <img src="images/pudding.jpg" alt="pudding" class="rounded-xl mx-auto mb-4 h-48 object-cover" />
-        <h4 class="text-xl font-semibold">Pudding Aneka Rasa</h4>
-        <p class="text-mocha">Lembut, manis, dan menggoda setiap suapan.</p>
+      <div class="bg-white shadow-lg rounded-2xl p-4 sm:p-5 md:p-6 text-center hover:scale-105 transition-transform">
+        <img src="images/pudding.jpg" alt="pudding" class="rounded-xl mx-auto mb-3 sm:mb-4 h-36 sm:h-40 md:h-48 w-full object-cover" />
+        <h4 class="text-base sm:text-lg md:text-xl font-semibold">Pudding Aneka Rasa</h4>
+        <p class="text-xs sm:text-sm md:text-base text-mocha mt-1">Lembut, manis, dan menggoda setiap suapan.</p>
       </div>
-
-      <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:scale-105 transition-transform">
-        <img src="images/snackbox.jpg" alt="snackbox" class="rounded-xl mx-auto mb-4 h-48 object-cover" />
-        <h4 class="text-xl font-semibold">Snack Box</h4>
-        <p class="text-mocha">Isi beragam snack tradisional dan modern.</p>
+      <div class="bg-white shadow-lg rounded-2xl p-4 sm:p-5 md:p-6 text-center hover:scale-105 transition-transform">
+        <img src="images/snackbox.jpg" alt="snackbox" class="rounded-xl mx-auto mb-3 sm:mb-4 h-36 sm:h-40 md:h-48 w-full object-cover" />
+        <h4 class="text-base sm:text-lg md:text-xl font-semibold">Snack Box</h4>
+        <p class="text-xs sm:text-sm md:text-base text-mocha mt-1">Isi beragam snack tradisional dan modern.</p>
       </div>
     </div>
   </section>
 
-  <section class="py-20 bg-cream" id="menu">
-    <div class="text-center mb-12">
-      <h3 class="text-lg text-mocha font-semibold">TAKE A QUICK BITE</h3>
-      <h2 class="text-4xl font-bold mb-3">CHOOSE & ENJOY</h2>
-      <p class="text-mocha">Pilih menu favoritmu dan nikmati bersama teman atau keluarga.</p>
+  <section class="py-10 sm:py-12 md:py-16 lg:py-20 bg-cream" id="menu">
+    <div class="text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12 px-4">
+      <h3 class="text-xs sm:text-sm md:text-base lg:text-lg text-mocha font-semibold uppercase tracking-wide">Take A Quick Bite</h3>
+      <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 sm:mb-3">CHOOSE & ENJOY</h2>
+      <p class="text-xs sm:text-sm md:text-base text-mocha max-w-2xl mx-auto">Pilih menu favoritmu dan nikmati bersama teman atau keluarga.</p>
     </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto px-6">
-      <div class="bg-beige p-6 rounded-2xl shadow-md text-center hover:bg-mocha hover:text-cream transition">
-        <img src="images/mentai.jpg" alt="mentai" class="rounded-xl mb-4 mx-auto h-48 object-cover" />
-        <h4 class="text-xl font-semibold">Dimsum Mentai</h4>
-        <p class="mb-4">Lezat dan creamy!</p>
-        <a href="menu.html" class="bg-maroon text-white px-6 py-3 rounded-lg font-semibold hover:bg-mocha transition">Order Now</a>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="bg-beige p-4 sm:p-5 md:p-6 rounded-2xl shadow-md text-center hover:bg-mocha hover:text-cream transition">
+        <img src="images/mentai.jpg" alt="mentai" class="rounded-xl mb-3 sm:mb-4 mx-auto h-36 sm:h-40 md:h-48 w-full object-cover" />
+        <h4 class="text-base sm:text-lg md:text-xl font-semibold">Dimsum Mentai</h4>
+        <p class="mb-3 sm:mb-4 text-xs sm:text-sm md:text-base">Lezat dan creamy!</p>
+        <a href="menu.html" class="inline-block bg-maroon text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-lg text-xs sm:text-sm md:text-base font-semibold hover:bg-mocha transition">Order Now</a>
       </div>
-
-      <div class="bg-beige p-6 rounded-2xl shadow-md text-center hover:bg-mocha hover:text-cream transition">
-        <img src="images/pudding.jpg" alt="puding" class="rounded-xl mb-4 mx-auto h-48 object-cover" />
-        <h4 class="text-xl font-semibold">Pudding Variants</h4>
-        <p class="mb-4">Manis dan lembut!</p>
-        <a href="menu.html" class="bg-maroon text-white px-6 py-3 rounded-lg font-semibold hover:bg-mocha transition">Order Now</a>
+      <div class="bg-beige p-4 sm:p-5 md:p-6 rounded-2xl shadow-md text-center hover:bg-mocha hover:text-cream transition">
+        <img src="images/pudding.jpg" alt="puding" class="rounded-xl mb-3 sm:mb-4 mx-auto h-36 sm:h-40 md:h-48 w-full object-cover" />
+        <h4 class="text-base sm:text-lg md:text-xl font-semibold">Pudding Variants</h4>
+        <p class="mb-3 sm:mb-4 text-xs sm:text-sm md:text-base">Manis dan lembut!</p>
+        <a href="menu.html" class="inline-block bg-maroon text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-lg text-xs sm:text-sm md:text-base font-semibold hover:bg-mocha transition">Order Now</a>
       </div>
-
-      <div class="bg-beige p-6 rounded-2xl shadow-md text-center hover:bg-mocha hover:text-cream transition">
-        <img src="images/snackbox.jpg" alt="snackbox" class="rounded-xl mb-4 mx-auto h-48 object-cover" />
-        <h4 class="text-xl font-semibold">Snack Box</h4>
-        <p class="mb-4">Cemilan seru untuk semua suasana.</p>
-        <a href="menu.html" class="bg-maroon text-white px-6 py-3 rounded-lg font-semibold hover:bg-mocha transition">Order Now</a>
+      <div class="bg-beige p-4 sm:p-5 md:p-6 rounded-2xl shadow-md text-center hover:bg-mocha hover:text-cream transition">
+        <img src="images/snackbox.jpg" alt="snackbox" class="rounded-xl mb-3 sm:mb-4 mx-auto h-36 sm:h-40 md:h-48 w-full object-cover" />
+        <h4 class="text-base sm:text-lg md:text-xl font-semibold">Snack Box</h4>
+        <p class="mb-3 sm:mb-4 text-xs sm:text-sm md:text-base">Cemilan seru untuk semua suasana.</p>
+        <a href="menu.html" class="inline-block bg-maroon text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-lg text-xs sm:text-sm md:text-base font-semibold hover:bg-mocha transition">Order Now</a>
       </div>
     </div>
   </section>
 
-  <section id="about" class="py-20 bg-white">
-    <div class="max-w-5xl mx-auto px-6">
-      <div class="flex flex-col md:flex-row items-center justify-center gap-10 bg-cream shadow-lg rounded-2xl p-10">
-        <img src="images/logo.png" alt="logo" class="w-28 h-28 md:w-40 md:h-40 object-contain" />
+  <section id="about" class="py-10 sm:py-12 md:py-16 lg:py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row items-center justify-center gap-5 sm:gap-6 md:gap-8 lg:gap-10 bg-cream shadow-lg rounded-2xl p-5 sm:p-6 md:p-8 lg:p-10">
+        <img src="images/logo.png" alt="logo" class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain" />
         <div class="text-center md:text-left">
-          <h3 class="text-3xl font-bold text-maroon mb-4">Why Choose Us?</h3>
-          <ul class="text-mocha space-y-2 text-lg">
+          <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-maroon mb-3 sm:mb-4">Why Choose Us?</h3>
+          <ul class="text-mocha space-y-1.5 sm:space-y-2 text-sm sm:text-base md:text-lg">
             <li>✅ Enak, bikin kenyang, hati pun senang</li>
             <li>✅ Harga ramah di kantong</li>
             <li>✅ Cocok untuk acara & sehari-hari</li>
@@ -130,41 +128,63 @@
     </div>
   </section>
 
-  <section class="py-20 bg-beige bg-opacity-40" id="contact">
-  <div class="text-center mb-10">
-    <h2 class="text-3xl font-bold text-maroon">CONTACT US</h2>
-    <p class="text-mocha">Kirim pesan, saran, atau kritik langsung ke email kami!</p>
-  </div>
-
-  <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 px-6">
-    <form action="https://formsubmit.co/dapoerhas53@gmail.com" method="POST" class="bg-white p-8 rounded-2xl shadow-md">
-      <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 mb-4 border border-beige rounded-lg focus:outline-none focus:ring-2 focus:ring-mocha">
-      <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 mb-4 border border-beige rounded-lg focus:outline-none focus:ring-2 focus:ring-mocha">
-      <textarea name="message" placeholder="Your Message" rows="5" required class="w-full p-3 mb-6 border border-beige rounded-lg focus:outline-none focus:ring-2 focus:ring-mocha"></textarea>
-
-      <input type="hidden" name="_captcha" value="false">
-
-      <button type="submit" class="w-full bg-maroon text-white py-3 rounded-lg font-semibold hover:bg-mocha transition">
-        Send Message
-      </button>
-    </form>
-
-    <div class="text-center md:text-left">
-      <p class="mb-3"><i class="ri-map-pin-line text-maroon"></i> Jakarta, Indonesia</p>
-      <p class="mb-3"><i class="ri-phone-line text-maroon"></i> +62 815-1131-2619</p>
-      <div class="flex justify-center md:justify-start space-x-6 text-3xl mt-4">
-        <a href="https://instagram.com/makanbentars" target="_blank" class="hover:text-mocha"><i class="ri-instagram-line"></i></a>
-        <a href="https://www.tiktok.com/@makanbentars" target="_blank" class="hover:text-mocha"><i class="ri-tiktok-line"></i></a>
-        <a href="https://wa.me/6281511312619" target="_blank" class="hover:text-mocha"><i class="ri-whatsapp-line"></i></a>
-        <a href="https://linktr.ee/makanbentars" target="_blank" class="hover:text-mocha"><i class="ri-links-line"></i></a>
+  <section class="py-10 sm:py-12 md:py-16 lg:py-20 bg-beige bg-opacity-40" id="contact">
+    <div class="text-center mb-6 sm:mb-8 md:mb-10 px-4">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-maroon mb-2">CONTACT US</h2>
+      <p class="text-xs sm:text-sm md:text-base text-mocha">Kirim pesan, saran, atau kritik langsung ke email kami!</p>
+    </div>
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-5 sm:gap-6 md:gap-8 lg:gap-10 px-4 sm:px-6">
+      <form action="https://formsubmit.co/dapoerhas53@gmail.com" method="POST" class="bg-white p-5 sm:p-6 md:p-8 rounded-2xl shadow-md">
+        <input type="text" name="name" placeholder="Your Name" required class="w-full p-2.5 sm:p-3 mb-3 sm:mb-4 text-sm sm:text-base border border-beige rounded-lg focus:outline-none focus:ring-2 focus:ring-mocha">
+        <input type="email" name="email" placeholder="Your Email" required class="w-full p-2.5 sm:p-3 mb-3 sm:mb-4 text-sm sm:text-base border border-beige rounded-lg focus:outline-none focus:ring-2 focus:ring-mocha">
+        <textarea name="message" placeholder="Your Message" rows="4" required class="w-full p-2.5 sm:p-3 mb-4 sm:mb-6 text-sm sm:text-base border border-beige rounded-lg focus:outline-none focus:ring-2 focus:ring-mocha resize-none"></textarea>
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit" class="w-full bg-maroon text-white py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-mocha transition">
+          Send Message
+        </button>
+      </form>
+      <div class="text-center md:text-left space-y-2.5 sm:space-y-3">
+        <p class="text-xs sm:text-sm md:text-base flex items-center justify-center md:justify-start gap-2">
+          <i class="ri-map-pin-line text-maroon text-base sm:text-lg"></i> 
+          <span>Jakarta, Indonesia</span>
+        </p>
+        <p class="text-xs sm:text-sm md:text-base flex items-center justify-center md:justify-start gap-2">
+          <i class="ri-phone-line text-maroon text-base sm:text-lg"></i> 
+          <span>+62 815-1131-2619</span>
+        </p>
+        <div class="flex justify-center md:justify-start space-x-4 sm:space-x-5 md:space-x-6 text-xl sm:text-2xl md:text-3xl pt-2 sm:pt-3">
+          <a href="https://instagram.com/makanbentars" target="_blank" class="hover:text-mocha transition"><i class="ri-instagram-line"></i></a>
+          <a href="https://www.tiktok.com/@makanbentars" target="_blank" class="hover:text-mocha transition"><i class="ri-tiktok-line"></i></a>
+          <a href="https://wa.me/6281511312619" target="_blank" class="hover:text-mocha transition"><i class="ri-whatsapp-line"></i></a>
+          <a href="https://linktr.ee/makanbentars" target="_blank" class="hover:text-mocha transition"><i class="ri-links-line"></i></a>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="bg-maroon text-cream py-6 text-center">
-    <p>&copy; 2025 Makan Bentars. All Rights Reserved.</p>
+  <footer class="bg-maroon text-cream py-4 sm:py-5 md:py-6 text-center px-4">
+    <p class="text-xs sm:text-sm md:text-base">&copy; 2025 Makan Bentars. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      const icon = mobileMenuBtn.querySelector('i');
+      icon.classList.toggle('ri-menu-line');
+      icon.classList.toggle('ri-close-line');
+    });
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        const icon = mobileMenuBtn.querySelector('i');
+        icon.classList.add('ri-menu-line');
+        icon.classList.remove('ri-close-line');
+      });
+    });
+  </script>
 
 </body>
 </html>
