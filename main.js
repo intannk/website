@@ -9,7 +9,6 @@ menuBTN.addEventListener('click', () => {
     menuBTNIcon.setAttribute('class', isOpen ? "ri-close-line" : "ri-menu-line");
 });
 
-// --- WHATSAPP MESSAGE FORM ---
 const whatsappForm = document.getElementById("whatsappForm");
 if (whatsappForm) {
     whatsappForm.addEventListener("submit", function(event) {
@@ -19,7 +18,7 @@ if (whatsappForm) {
         const email = document.getElementById("email").value;
         const message = document.getElementById("message").value;
 
-        const whatsappNumber = "6281234567890"; // Ganti dengan nomor WA kamu
+        const whatsappNumber = "6281511312619";
         const text = `Halo, saya ${name} (${email}) ingin bertanya: ${message}`;
         const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
 

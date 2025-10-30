@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Makan Bentars</title>
 
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
@@ -27,17 +26,14 @@
 
 <body class="bg-cream text-maroon font-sans">
 
-  <!-- ✅ HEADER -->
   <header class="relative bg-maroon text-cream shadow-md">
     <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
       
-      <!-- LOGO + NAMA RATA KIRI -->
       <div class="flex items-center space-x-3">
         <img src="images/logo.png" alt="Makan Bentars Logo" class="w-14 h-auto object-contain" />
         <h1 class="text-2xl font-bold tracking-wide">Makan Bentars</h1>
       </div>
 
-      <!-- NAV LINKS -->
       <ul class="hidden md:flex space-x-8 text-lg font-medium ml-auto">
         <li><a href="#home" class="hover:text-beige transition">Home</a></li>
         <li><a href="#special" class="hover:text-beige transition">Special</a></li>
@@ -49,7 +45,6 @@
     </div>
   </header>
 
-  <!-- ✅ HERO SECTION -->
   <section id="home" class="relative h-[80vh] flex items-center justify-center bg-cover bg-center" 
     style="background-image: url('images/header-bg.png');">
     <div class="absolute inset-0 bg-black bg-opacity-40"></div>
@@ -64,7 +59,6 @@
     </div>
   </section>
 
-  <!-- ✅ SPECIAL SECTION -->
   <section class="py-20 bg-beige bg-opacity-40" id="special">
     <h2 class="text-center text-4xl font-bold mb-12 text-maroon">OUR SPECIAL MENU</h2>
 
@@ -89,7 +83,6 @@
     </div>
   </section>
 
-  <!-- ✅ MENU SECTION -->
   <section class="py-20 bg-cream" id="menu">
     <div class="text-center mb-12">
       <h3 class="text-lg text-mocha font-semibold">TAKE A QUICK BITE</h3>
@@ -121,7 +114,6 @@
     </div>
   </section>
 
-  <!-- ✅ ABOUT SECTION -->
   <section id="about" class="py-20 bg-white">
     <div class="max-w-5xl mx-auto px-6">
       <div class="flex flex-col md:flex-row items-center justify-center gap-10 bg-cream shadow-lg rounded-2xl p-10">
@@ -138,7 +130,6 @@
     </div>
   </section>
 
-  <!-- ✅ CONTACT SECTION -->
   <section class="py-20 bg-beige bg-opacity-40" id="contact">
   <div class="text-center mb-10">
     <h2 class="text-3xl font-bold text-maroon">CONTACT US</h2>
@@ -151,11 +142,7 @@
       <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 mb-4 border border-beige rounded-lg focus:outline-none focus:ring-2 focus:ring-mocha">
       <textarea name="message" placeholder="Your Message" rows="5" required class="w-full p-3 mb-6 border border-beige rounded-lg focus:outline-none focus:ring-2 focus:ring-mocha"></textarea>
 
-      <!-- Optional: Nonaktifkan captcha -->
       <input type="hidden" name="_captcha" value="false">
-
-      <!-- Optional: Redirect ke halaman setelah kirim -->
-      <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html"> -->
 
       <button type="submit" class="w-full bg-maroon text-white py-3 rounded-lg font-semibold hover:bg-mocha transition">
         Send Message
@@ -175,8 +162,6 @@
     </div>
   </section>
 
-
-  <!-- ✅ FOOTER -->
   <footer class="bg-maroon text-cream py-6 text-center">
     <p>&copy; 2025 Makan Bentars. All Rights Reserved.</p>
   </footer>
