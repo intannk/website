@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesan Sekarang | Makan Bentars</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f9f8e6;
+      font-family: 'Inter', sans-serif;
+    }
+    .text-playfair {
+      font-family: 'Playfair Display', serif;
+    }
+    .app-card {
+      border: 1px solid #e8cc9f;
+      transition: all 0.3s ease;
+      background-color: #fffdf7;
+      box-shadow: 0 6px 12px rgba(116, 25, 15, 0.05);
+    }
+    .app-card:hover {
+      background-color: #e8cc9f;
+      transform: translateY(-4px);
+      box-shadow: 0 8px 18px rgba(116, 25, 15, 0.2);
+    }
+    .app-logo {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      margin: 0 auto 8px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-[#e8cc9f] shadow-md sticky top-0 z-10">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="images/logo.png" alt="Logo" class="h-10 w-10 object-contain">
+        <span class="text-2xl font-bold text-[#74190f] text-playfair">Makan Bentars</span>
+      </a>
+      <div class="space-x-6 font-semibold text-[#74190f]">
+        <a href="menu.html" class="hover:text-[#ac866c]">Menu</a>
+        <a href="order.html" class="text-[#ac866c] border-b-2 border-[#ac866c] pb-1">Pesan</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="container mx-auto px-4 py-20 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold text-[#74190f] text-playfair mb-4">
+      Pesan Lewat Aplikasi Favoritmu 🍱
+    </h1>
+    <p class="text-[#74190f]/80 max-w-2xl mx-auto mb-10">
+      Nikmati hidangan lezat kami dengan mudah! Pilih aplikasi pemesanan yang kamu suka atau chat langsung lewat WhatsApp.
+    </p>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20menu" target="_blank"
+       class="inline-block bg-[#25D366] text-white py-4 px-10 rounded-full font-bold text-lg mb-12 shadow-md hover:bg-green-600 hover:scale-105 transition">
+      💬 Chat via WhatsApp (Fast Response)
+    </a>
+
+    <!-- Apps Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+      <a href="#" class="app-card rounded-2xl py-6 px-4 font-bold text-[#74190f] text-lg flex flex-col items-center">
+        <img src="images/Gofood_logo.png" alt="GoFood" class="app-logo">
+        <span>GoFood</span>
+      </a>
+
+      <a href="#" class="app-card rounded-2xl py-6 px-4 font-bold text-[#74190f] text-lg flex flex-col items-center">
+        <img src="images/shopefood_logo.png" alt="ShopeeFood" class="app-logo">
+        <span>ShopeeFood</span>
+      </a>
+
+      <a href="#" class="app-card rounded-2xl py-6 px-4 font-bold text-[#74190f] text-lg flex flex-col items-center">
+        <img src="images/grabfood_logo.png" alt="GrabFood" class="app-logo">
+        <span>GrabFood</span>
+      </a>
+
+      <a href="#" class="app-card rounded-2xl py-6 px-4 font-bold text-[#74190f] text-lg flex flex-col items-center">
+        <img src="images/tokopedia_logo.jpg" alt="Tokopedia" class="app-logo">
+        <span>Tokopedia</span>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBaG7A01ViHnt78YPgsJGWSa_kH_95cPNv3s_EEof-G0406w/viewform?usp=header" 
+         target="_blank" 
+         class="app-card rounded-2xl py-6 px-4 font-bold text-[#74190f] text-lg flex flex-col items-center">
+        <span>Formulir Pesanan</span>
+      </a>
+
+      <a href="menu.html" class="app-card rounded-2xl py-6 px-4 font-bold text-[#74190f] text-lg flex flex-col items-center">
+        <span>Lihat Menu</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- ✅ FOOTER -->
+  <footer class="bg-[#74190f] text-[#f9f8e6] py-6 text-center mt-16">
+    <p>&copy; 2025 Makan Bentars. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
